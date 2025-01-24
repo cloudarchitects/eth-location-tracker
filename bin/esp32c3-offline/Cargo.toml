@@ -11,11 +11,7 @@ harness = false # do not use the built in cargo test harness -> resolve rust-ana
 
 
 [dependencies]
-positioning = { path = "../../positioning" }
-positioning-online = { path = "../../positioning-online" }
-connect = { path = "../../connect" }
-
-anyhow = { version = "1.0.95" }
+beacons = { path = "../../beacons", features = ["WPW"] }
 log = { version = "0.4", default-features = false }
 
 esp-idf-svc = { version = "0.50.1", default-features = false, features = ["alloc", "binstart", "std", "native"] }
